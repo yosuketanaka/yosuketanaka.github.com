@@ -6,11 +6,11 @@
 <head>
   <meta charset="utf-8">
   <title>Blog Archive - My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <meta name="author" content="Yosuke Tanaka">
 
   
-  <meta name="description" content=" Blog Archive 2012 test2
-Oct 26 2012 Recent Posts test2 ">
+  <meta name="description" content="Blog Archive 2012 test2
+Oct 26 2012 Recent Posts test2 Latest Tweets Status updating... $.domReady(function(){ getTwitterFeed("yosuke__", 4, false &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ Oct 26 2012 Recent Posts test2 ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yoursite.com/blog/archives/">
+  <link rel="canonical" href="http://yosuketanaka.github.com/blog/archives/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -50,7 +50,7 @@ Oct 26 2012 Recent Posts test2 ">
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input type="hidden" name="q" value="site:yosuketanaka.github.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -107,6 +107,22 @@ Oct 26 2012 Recent Posts test2 ">
 </section>
 
 
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("yosuke__", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/yosuke__" class="twitter-follow-button" data-show-count="false">Follow @yosuke__</a>
+  
+</section>
+
 
 
 
@@ -118,7 +134,7 @@ Oct 26 2012 Recent Posts test2 ">
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Your Name -
+  Copyright &copy; 2012 - Yosuke Tanaka -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
